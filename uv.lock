@@ -1,6 +1,12 @@
 version = 1
 requires-python = ">=3.13"
 
+[manifest]
+members = [
+    "data-analysis-6th-sem",
+    "pr6",
+]
+
 [[package]]
 name = "anyio"
 version = "4.8.0"
@@ -1063,6 +1069,17 @@ sdist = { url = "https://files.pythonhosted.org/packages/13/fc/128cc9cb8f03208bd
 wheels = [
     { url = "https://files.pythonhosted.org/packages/3c/a6/bc1012356d8ece4d66dd75c4b9fc6c1f6650ddd5991e421177d9f8f671be/platformdirs-4.3.6-py3-none-any.whl", hash = "sha256:73e575e1408ab8103900836b97580d5307456908a03e92031bab39e4554cc3fb", size = 18439 },
 ]
+
+[[package]]
+name = "pr6"
+version = "0.1.0"
+source = { virtual = "pr6" }
+dependencies = [
+    { name = "notebook" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "notebook", specifier = ">=7.3.3" }]
 
 [[package]]
 name = "prometheus-client"
